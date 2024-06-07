@@ -12,7 +12,7 @@ input {
   border: 1px solid #ccc;
   height: 25px;
   padding: 5px;
-  width: 420px;
+  width: 100%;
 }
 
 input:focus {
@@ -45,12 +45,18 @@ i {
 
 .wrapper {
   height: 100%;
-  background: linear-gradient(120deg,#080bc5c7,#00d0ff);
-}
-
-.container {
-  width: 500px;
-  border: 3px solid #ccc;
-  padding: 30px;
-  border-radius: 5px;
+  background: linear-gradient(120deg, #080bc5c7, #00d0ff);
+  padding: 0px 10px;
+  
+  }
+  
+  .container {
+    width: 50%;
+    border: 3px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+    // Defina o width do elemento para dispositivos móveis
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
 }

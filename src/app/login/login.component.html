@@ -10,11 +10,11 @@
     <span *ngIf="loginForm.get('password')?.touched && !loginForm.get('password')?.valid" class="error">! Password is required</span>
     <span *ngIf="error">{{error}}</span>
     
-    <div>
+    <div fxLayout="row">
       <input type="text" placeholder="Email" formControlName='email'>
       <i class="fa fa-envelope-o" aria-hidden="true"></i>
     </div>
-    <div>
+    <div fxLayout="row">
       <input [type]="passwordType" placeholder="Password" formControlName='password'>
       <i [ngClass]="(showIcon) ? 'fa fa-eye-slash' : 'fa fa-eye'" aria-hidden="true" (click)="onChange()"></i>
     </div>
